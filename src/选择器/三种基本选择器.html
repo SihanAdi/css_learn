@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>三种基本选择器</title>
+    <!--    优先级：id > class > 标签-->
+    <style>
+
+        /*标签选择器*/
+
+        p{
+            color : green;
+        }
+        h1{
+            color : red;
+        }
+        /*类选择器，不能以数字开头*/
+        .lalal{
+            color : blue;
+        }
+        .baba{
+            color : yellow;
+        }
+        .1{
+            color : grew;
+        }
+        /*id选择器，不能以数字开头*/
+        #ad{
+            color : brown;
+        }
+        #sh{
+            color : pink;
+        }
+    </style>
+</head>
+<body>
+<h1>标签1</h1>
+<h1 class="lalal">标签1</h1>
+<h1 class="baba">标签1</h1>
+<h1 class="baba">标签1</h1>
+<h1 id="ad">标签1</h1>
+<h1 id="sh" class="baba">标签1</h1>
+<p class="1">段落</p>
+
+</body>
+</html>

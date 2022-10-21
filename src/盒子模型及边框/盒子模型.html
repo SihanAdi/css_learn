@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+  <style>
+    h2, a, ul, li, body{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+    }
+    #box{
+      width: 300px;
+      border: 1px solid red;
+      /*居中
+      要求： 快元素，快元素有固定宽度
+      */
+      /*顺时针*/
+      margin: 0 auto;
+    }
+    h2{
+      background: wheat;
+      color: red;
+      font-size: 22px;
+      line-height: 30px;
+      text-align: center;
+      padding: 3px;
+    }
+    form{
+      background: white;
+    }
+    div:nth-of-type(1) input{
+      border: 1px solid red;
+    }
+    div:nth-of-type(2) input{
+      border: 1px dashed blue;
+      margin-left: 20px;
+    }
+    div:nth-of-type(3) input{
+      border: 1px solid green;
+    }
+  </style>
+</head>
+<body>
+<div id="box">
+  <h2>用户登录</h2>
+  <div>
+    <span>用户名</span>
+    <input type="text">
+  </div>
+  <div>
+    <span>密码</span>
+    <input type="password">
+  </div>
+  <div>
+    <span>邮箱</span>
+    <input type="email">
+  </div>
+</div>
+</body>
+</html>

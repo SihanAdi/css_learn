@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #content{
+      width: 400px;
+      height: 400px;
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+      font-size: 12px;
+      line-height: 25px;
+      border: 2px solid red;
+    }
+    ul, li{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    #content ul{
+      position: relative;
+    }
+    .tipbg,.tiptext{
+      position: absolute;
+      width: 400px;
+      height: 25px;
+      top: 90px;
+    }
+    .tiptext{
+      color: red;
+      /*0-无限
+      0最小*/
+      z-index: 999;
+    }
+    .tipbg{
+      background: black;
+      /*透明度*/
+      /*opacity: 0.5;*/
+    }
+  </style>
+</head>
+<body>
+<div id="content">
+  <ul>
+    <li><img src="../美化页面/1.png" alt=""></li>
+    <li class="tiptext">cssjfjajfh</li>
+    <li class="tipbg"></li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接伪类</title>
+  <style>
+<!--      默认状态-->
+    a{
+      text-decoration: none;
+      color: #000;
+    }
+    /*鼠标悬浮状态*/
+    a:hover{
+      color: aqua;
+        font-size: 30px;
+    }
+    /*鼠标按住未释放状态*/
+    a:active{
+        color: red;
+    }
+    /*a:visited{*/
+    /*    color: yellow;*/
+    /*}*/
+    /*a:link{*/
+    /*    color: blanchedalmond;*/
+    /*}*/
+    /*阴影：text-shadow: 颜色，水平偏移，垂直偏移，阴影半径*/
+    #price{
+        text-shadow: blue 2px 2px 2px;
+    }
+  </style>
+</head>
+<body>
+<p><a href="#"><img src="1.png" alt="image"></a></p>
+<p><a href="#">linnabeier</a>
+</p>
+<p><a href="#">dishini</a>
+</p>
+<p><a href="" id="price">168</a>
+</p>
+</body>
+</html>

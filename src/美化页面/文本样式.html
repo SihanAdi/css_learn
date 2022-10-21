@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+  <style>
+    h1{
+      /*
+      颜色
+      rgb 0 - F
+      */
+      /*color: rgb(0,255,255);*/
+
+      /*rgba a:透明度 0 - 1*/
+      color: rgba(0,255,255, 0.5);
+      /*text-align 排版*/
+      text-align: center;
+    }
+    .p1{
+      /*text-indent 段落首行缩进*/
+      text-indent: 2em;
+    }
+    .p2{
+      background: yellowgreen;
+      /*块的高度*/
+      height: 100px;
+      /*行高*/
+      line-height: 100px;
+    /*  行高和块的高度一致，上下居中*/
+    }
+    .l1{
+      /*下划线*/
+      text-decoration: underline;
+    }
+    .l2{
+      /*上划线*/
+      text-decoration: overline;
+    }
+    .l3{
+      /*中划线*/
+      text-decoration: line-through;
+    }
+    a{
+      /*去掉下划线*/
+      text-decoration: none;
+    }
+
+    img,span{
+      /*水平对齐参照物*/
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<a href="">123</a>
+<h1>字体 <span id="word">样式</span></h1>
+<p class="p1"> class="one">Give me the strength lightly to bear my joys and sorrows.
+</p>
+<p class="p2">Give me the strength to make my love fruitful in service.
+</p>
+<p class="l1">Give me the strength never to disown the poor or bend my knees before insolent might.
+</p>
+<p class="l2">Give me the strength to raise my mind high above daily trifles.
+</p>
+<p class="l3" id="last">And give me the strength to surrender my strength to thy will with love.
+</p>
+<h2>End lalaalaallalal</h2>
+<p>
+  <img src="1.png" alt="beier">
+  <span>13213412423143</span>
+</p>
+
+</body>
+</html>

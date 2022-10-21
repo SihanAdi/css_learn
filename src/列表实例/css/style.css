@@ -1,0 +1,41 @@
+#nav{
+    width: 300px;
+    background: darkgray;
+}
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+    background: red;
+    color: black;
+    text-indent: 1em;
+    /*background 颜色 图片 位置 平铺方式*/
+    background: red url("1.png") 264px 6px no-repeat;
+}
+/*
+list-style:
+none 去掉原点
+circle 空心圆
+decimal 数字
+square 正方形
+*/
+ul li{
+    height: 50px;
+    list-style: none;
+    text-indent: 1em;
+    background-image: url("1.png");
+    background-repeat: no-repeat;
+    background-position: 233px -1px;
+    /*border: 1px solid black;*/
+    /*display: inline-block;*/
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: orange;
+    font-size: large;
+    text-decoration: underline;
+}

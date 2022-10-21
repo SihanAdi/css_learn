@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>层次选择器</title>
+  <style>
+  /*p{
+  background : green;
+  }*/
+    /*后代选择器*/
+    body li{
+        background : green;
+    }
+    /*子选择器*/
+    /*body>p{
+        background : red;
+    }*/
+    /*相邻兄弟选择器, 向下一个 */
+    /*.ad+p{
+        background : red;
+    }*/
+    /*通用选择器*/
+    .ad~p{
+        background : red;
+    }
+  </style>
+</head>
+<body>
+<p class="ad">p0</p>
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<p>p4</p>
+<ul>
+    <li>
+        <p>p5</p>
+    </li>
+    <li>
+        <p class="ad">p6</p>
+    </li>
+    <li>
+        <p>p7</p>
+    </li>
+</ul>
+<p>p8</p>
+<p >p9</p>
+<p>p10</p>
+</body>
+</html>

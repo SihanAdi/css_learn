@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    解决父级边框塌陷
+1。增加父级高度
+2。增加一个空的div标签清除浮动
+.clear{
+            clear: both;
+            margin: 0;
+            padding: 0;
+        }
+3。在父级元素中使用overflow
+4。父类添加一个伪类after
+-->
+<!--    clear:
+left:左侧不允许有浮动元素
+right:右侧不允许有浮动元素
+both:两侧不允许有浮动元素
+none
+-->
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+        }
+        #father{
+            border: 1px solid red;
+            /*overflow: hidden;*/
+        }
+        father:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .d1{
+            border: 1px solid green;
+            display: inline-block;
+            float: left;
+        }
+        .d2{
+            border: 1px solid yellow;
+            display: inline-block;
+            float: left;
+        }
+        .d3{
+            border: 1px solid black;
+            display: inline-block;
+            float: left;
+            /*clear: both;*/
+        }
+        .t1{
+            border: 1px solid pink;
+            font-size: 15px;
+            line-height: 25px;
+            display: inline-block;
+            float: left;
+            /*clear: both;*/
+         }
+        .clear{
+            clear: both;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="father">
+    <div class="d1">
+        <img src="1.png" alt="1">
+    </div>
+    <div class="d2">
+        <img src="2.png" alt="2">
+    </div>
+    <div class="d3">
+        <img src="3.png" alt="3">
+    </div>
+    <div class="t1">
+        浮动！呀！浮动！呀！
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>
